@@ -1,0 +1,44 @@
+/* public/css/estilos.css */
+
+/* Tipografía elegante */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Fondo muy claro para elegancia */
+    color: #343a40; /* Texto oscuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Espacio superior para el contenido principal por el navbar fijo */
+.content-wrapper {
+    padding-top: 70px; /* Ajusta según la altura de tu navbar */
+    flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
+}
+
+/* Estilo del Header/Navbar */
+.main-header .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffffff !important; /* Asegurar color blanco para el logo */
+}
+
+.main-header .nav-link {
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.main-header .nav-link:hover,
+.main-header .nav-link.active {
+    color: #cccccc !important; /* Un gris claro al pasar el ratón */
+}
+
+/* Estilo del Footer */
+.footer {
+    border-top: 1px solid #495057; /* Línea sutil sobre el footer */
+}
+
+.footer p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}

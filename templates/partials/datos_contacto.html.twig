@@ -1,0 +1,16 @@
+<div class="contacto-item" style="margin-bottom: 20px; padding-bottom: 10px;">
+    {# Estructura visual solicitada #}
+    <ul>
+        <li><strong>{{ contacto.nombre }}</strong></li>
+        <li><strong>Teléfono</strong>: {{ contacto.telefono }}</li>
+        {% if contacto.provincia %}
+            <li><strong>Provincia</strong>: {{ contacto.provincia.nombre }}</li>
+        {% endif %}
+        <li><strong>E-mail</strong>: {{ contacto.email }}</li>
+    </ul>
+
+    {# Botón funcional para ir a la edición/borrado #}
+    <a href="{{ path('editar', {'codigo': contacto.id}) }}" class="btn btn-primary btn-sm">
+        Editar / Ver detalles
+    </a>
+</div>
